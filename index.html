@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Thesis Geoinformatics - Voutos Y.</title>
+
+		<meta name="description" content="Developing a network of environmental sensors and presenting the results on a web GIS environment">
+		<meta name="author" content="YORGHOS VOUTOS">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--<[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<[endif]>-->
+	</head>
+
+	<body>
+	<!-- Wrap the entire slide show in a div using the "reveal" class. -->
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			<!--slide1-->
+				<section data-background-image= "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg"; data-background-transition= "zoom";>
+									<img width="50" height="49"; data-src="https://app.box.com/index.php?rm=preview_stream&fileId=23499757451&sharedName=lf7w4aebwmrmbuont1tlg7c1j1mcz8yz" alt="huaLogo">
+				<p style="font-size:65%;">HAROKOPIO UNIVERSITY OF ATHENS<br>Dpt of GEOGRAPHY<br><br><strong>Postgraduate Programme:<br> <em>Applied Geography and Spatial Planning</em><br>Stream C: Geoinformatics</strong></p>
+					<p style="font-size:50%;">Postgraduate Thesis:</p>
+					<a href="https://app.box.com/representation/file_version_145964127464/image_2048_jpg/1.jpg?shared_name=01hes8zmcqg709yftommtmcg4r2o3egg" target="_blank"><h3><strong>Developing a network of environmental sensors and presenting the results on a web GIS environment </strong></h3></a>
+					
+					<p style="font-size: 65%";>Yorghos Voutos<br></p>
+					<p style="font-size: 65%; color:#d3d3d3; text-shadow: 2px 2px black";>Supervisor: Associate Professor Christos Chalkias<br><br></p>
+					<p style="font-size: 65%";>Athens, Greece - March 2017</p>
+				</section>
+			<!--slide2-->
+			<section>
+			<section>
+					<h3>Environmental Crisis & Technology</h3>
+					<p style='font-size:70% ; text-align:justify'>
+The environmental crisis is now one of the biggest challenges humanity is facing and it directly affects man and his daily life. Meeting the challenges shall comprise the identification and recording of essential environmental parameters concerning the natural degradation. The technological achievements of the last two centuries have created new prospects of interaction between man and the environment which he is living in it. The participatory systems enhance new perspectives in scientific research through expanded use of technology.</p>
+				</section>
+				<!--slide2b-->
+				<section>
+				<h3>Environmental Paramerters</h3>
+					<p style='font-size:80% ; text-align:justify'>
+						The studied variables are: <font color="cyan">relative Humidity και mean Temperature of the air</font>, <font color="cyan">Air pollution </font>(through CO & CH4), <font color="cyan">Light pollution </font>and (experimentally) <font color="cyan">Sound pollution</font>.</br> The measurements record the state of the environment in an area <font color="cyan">closer </font>to the recording devices.</br> The variables are largely determined by technical limitations.
+
+					</p>
+				</section>
+			</section>
+<!--slide3-->
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h3>Components</h3>
+						<p style='font-size:90%; text-align:justify'>The project involves the <b>experimental implementation of a system which records and monitors elements of the environment </b>through the combined application of as IoT και Web GIS.<br>
+						The system <b>aims </b> at <font color="cyan">qualitative assessment </font>of the in-situ environmental conditions and  <font color="cyan">inference from geographic clustering </font> from phenomena which adversely affect it.</p>
+					</section>
+					<!--slide3a-->
+					<section>
+						<img width="90" height="61"; data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/1280px-Arduino_Logo.svg.png" alt="Arduino logo">
+						<h3>Arduino Yun</h3>
+						<p style='font-size:80%; text-align: justify;'><strong><em>Arduino</strong></em> Arduino is an open source hardware platform which enables to create automation applications based on easy to use hardware and software. It features a plethora of extensions (modules and sensors) and customization abilities.<br> <b><em>Arduino Yun</em></b> model is used in this study, because it provides the required capabilities for the project.</p>
+						<img width="150" height="112"; data-src="https://app.box.com/representation/file_version_116912692838/image_2048_jpg/1.jpg?shared_name=loaprsyzd0ihf9l6i0o564qsaxptleq9" alt="Yun">
+						<img width="150" height="112"; data-src="https://app.box.com/representation/file_version_33960201919/image_2048_jpg/1.jpg?shared_name=ju3acukgq9f6g653objf1gsest3zvmj8" alt="Yun_back" >
+					</section>
+					<!--slide3b-->
+					<section>
+						<h3>Android Application</h3>
+							<p style='font-size:70%; text-align: justify;'>
+							Android platform supports portable devices like smartphones and tablets. Is the most popular operating system platform for both portable and desktop computer devices.<br> The application is developed with Apache Cordova through standardised web technologies (HTML5, CSS3, and JavaScript). <br> Cordova supports Ionic framework which used for front-end developing for Android and IoS based on AngularJS.</p>
+							<img width="128" height="150"; data-src="https://upload.wikimedia.org/wikipedia/commons/d/db/Android_robot_2014.svg" alt="Android logo">
+							<img width="150" height="150"; data-src="https://camo.githubusercontent.com/a0fe95b9427fefe394531ad3fdd256bf2c617e6a/687474703a2f2f696f6e69636672616d65776f726b2e636f6d2f696d672f6e67636f72646f76612d636f6e746578742d6c6f676f2e706e67" alt="ngCordova">
+							<img width="150" height="150"; data-src="http://ionicframework.com/img/ionic-logo-blog.png" alt="ionic">
+					</section>
+					<!--slide3c-->
+					<section>
+						<h3>Web GIS</h3>
+							<p style='font-size:70%; text-align:justify;'> A Web Map offers capabilities of a <font color="cyan">supervisory medium which interactively displays spatial information</font>. Cartography offers plenty <font color="cyan">geo-visualisation methods</font> which are widely exploited with web mapping applications. Web maps offer <font color="cyan">interaction </font>between the user and provided information.</p>
+							<img width="400" height="381"; data-src="https://app.box.com/representation/file_version_116479814963/image_2048_jpg/1.jpg?shared_name=g3d6vlivmn419nucvsafoc6bf8nihsxe" alt="heatM_ex">
+					</section>
+				</section>
+				<!--slide4-->
+				<section>
+					<section>
+						<h3>Recording Device</h3>
+							<p style='font-size:70%; text-align:justify';>The experimental recording device is consisted from <b>5 sensors </b>for environmental observation, which produce <b>7 variables</b>. It is based on <b>Arduino Yun</b> microcontroller serving <b> fixed </b>and <b>portable </b>operation. It is powered by external  source, battery unit (power bank) for portable application and electricity supply for fixed. Measures are transfered through Bluetooth protocoll to an Android device and distributed to a server for further use in a Database system.</p>
+							<a href="https://app.box.com/representation/file_version_56057923037/image_2048_jpg/1.jpg?shared_name=xq02136tzfwes6zl1bf5qhao086d5zqy" target="_blank"><img width="800" height="300"; data-src="https://app.box.com/representation/file_version_56057923037/image_2048_jpg/1.jpg?shared_name=xq02136tzfwes6zl1bf5qhao086d5zqy" alt="MyArduino"></a>
+					</section>
+				<!--slide4a-->
+					<section>
+						<table style='font-size:70%';>
+							<thead style='font-size:70%';>
+								<tr>
+									<th>Expansion Type</th>
+									<th>Model</th>
+									<th>Function</th>
+									<th>Measurement unit </th>
+								</tr>
+							</thead>
+							<tbody style='font-size:90%';>
+								<tr>
+									<td>Temperature & humidity</td>
+									<td>DHT 22</td>
+									<td>Temperature, Rel. Humidity, Heat Index</td>
+									<td><sup>o</sup>C, %Humidity, %<sup>o</sup>C</td>
+								</tr>
+								<tr>
+									<td>Photometer</td>
+									<td>TEMT 2000</td>
+									<td>Luminocity</td>
+									<td>Lux (lx)</td>
+								</tr>
+								<tr>
+									<td>Microphone</td>
+									<td>MAX 4466</td>
+									<td>Noise pollution/ noise intensity</td>
+									<td>dBm</td>
+								</tr>
+								<tr>
+									<td>Gases microparticles</td>
+									<td>MQ-7</td>
+									<td>Concentration of Carbon Monoxide (CO)</td>
+									<td>ppm</td>
+								</tr>
+								<tr>
+									<td>Gases microparticles</td>
+									<td>MQ-4</td>
+									<td>Concentration of Methane (CH4)</td>
+									<td>ppm</td>
+								</tr>
+								<tr>
+									<td>Bluetooth</td>
+									<td>HC-06</td>
+									<td>Wireless communication</td>
+									<td> - </td>
+								</tr>
+							</tbody>
+						</table>
+						</section>
+				<!--slide4b-->
+						<section>
+							<a href="https://app.box.com/representation/file_version_116515577550/image_2048_jpg/1.jpg?shared_name=3nmfn760rmm2zkcohjo5ngzgp8grarlq" target="_blank"><img width="492" height="519" ; data-src="https://app.box.com/representation/file_version_116515577550/image_2048_jpg/1.jpg?shared_name=3nmfn760rmm2zkcohjo5ngzgp8grarlq" alt="my_circuit"></a>
+						</section>
+				<!--slide4c-->
+						<section>
+						<img data-src="https://app.box.com/representation/file_version_56083216093/image_2048_jpg/1.jpg?shared_name=pbhdku35tgqrgi4s5h7l06pm265xrrpu" alt="ardTerminal">
+						</section>
+					</section>
+
+				</section>
+				<!--slide5-->
+					<section>
+					<section data-background-transition="beige">
+						<h3>Data Distribution</em></h3>
+							<p style="font-size:70%;text-align:justify";>The <b>management </b> and <b>storage</b> of the recordings consist the fundamental elements of the proposed Sensor Network. <br>
+							Particularly for the purpose of the study a <font color="cyan">Client - Server  </font> schema has been developed  utilizing <b>Cloud Computing</b> technologies.</p>
+							<img width="150" height="112"; data-src="http://www.openhab.org/assets/images/binding/mqtt.png" alt="mqtt">
+							<img width="230" height="112"; data-src="http://photos.prnewswire.com/prnfull/20110712/SF33967LOGO" alt="heroku">
+							<img width="245" height="112"; data-src="https://webassets.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg" alt="mongo">
+					</section>
+				<!--slide5a-->
+					<section>
+						<img width="892" height="631"; data-src="https://app.box.com/representation/file_version_107583501912/image_2048_jpg/1.jpg?shared_name=0qoxult2bietp81bs16qht8yw1jj26pa" alt="device">
+					</section>
+				<!--slide5b-->
+					<section>
+						<a href="https://mlab.com/databases/sensodb/collections/sensor_data" target="_blank"><img data-src="https://app.box.com/representation/file_version_118172554264/image_2048_jpg/1.jpg?shared_name=q68lmqjvx625v5hwulyv70w9x525vxeu" alt="mlab"></a>
+						</section>
+				</section>
+				<!--slide6-->
+				<section>
+					<section data-background-transition="beige">
+					<h3>Android APP</h3>
+							<p style="font-size:90%;text-align:center";>Functions</p>
+							<ul type="circle">
+							<li class="fragment">Data acquisition through Bluetooth</li>
+							<li class="fragment">Acquisition of Geographical Location through GPS and location services</li>
+							<li class="fragment">Data collection</li>
+							<li class="fragment">Database provisioning</li>
+							<li class="fragment">Cartographic representation </li>
+							</ul>
+					</section>
+				<!--slide6a-->
+					<section>
+						<img width="421" height="595"; data-src="https://app.box.com/representation/file_version_116961042798/image_2048_jpg/1.jpg?shared_name=l5i9nnfvngk98y1z1qpf7z8qn0vksb79" alt="androidA">
+					</section>
+				<!--slide6b-->
+					<section>
+						<a href="https://app.box.com/representation/file_version_117768089522/image_2048_jpg/1.jpg?shared_name=wqbm2sgcuo7f5tp6ahn77prc5g15gfdi" target="_blank"><img width="360" height="600"; data-src="https://app.box.com/representation/file_version_117768089522/image_2048_jpg/1.jpg?shared_name=wqbm2sgcuo7f5tp6ahn77prc5g15gfdi" alt="appARRAY"></a>
+					</section>
+				</section>
+				<!--slide7-->
+				<section>
+					<section data-background-transition="beige">
+					<h3>web map</h3>
+						<p style="font-size:90%;text-align:justify";>The chosen method of cartographic representation is <font color="cyan">Heat Map</font> because it provides an optimal visualisation of environmental quality on any given location through variable clustering.
+						<br> Heat maps act as an <font color="cyan"> environmental assessement system</font>, synchronizing  <font color="cyan">technical sizes and spatial position</font>. </p>
+					</section>
+				<!--slide7b-->
+					<section>
+					<p style="font-size: 75%";>Representation of a Generalized Environmental Assessment through Heatmap</p>
+					<img data-src="https://app.box.com/representation/file_version_152841946347/image_2048_jpg/1.jpg?shared_name=lku5w4zx2f4ovabmvwz9ihzq6r135exh" alt="webmap"></section>
+				</section>
+
+				<!--slide8a-->
+				<section>
+					<section data-background-transition="beige">
+						<h3>Conclusions</h3>
+							<ul type="circle";>
+							<li class="fragment"; style="font-size:80%";>The proposed system consists an automated method of monitoring the environmental quality</li>
+							<li class="fragment"; style="font-size:80%";>The system supplies the network from many different devices (nodes) simultaneously</li>
+							<li class="fragment"; style="font-size:80%";>It requires little resources</li>
+							<li class="fragment"; style="font-size:80%";>It provides quantitative and qualitative assessment capabilities</li>
+							<li class="fragment"; style="font-size:80%";>It has many hardware extensions capabilities</li>
+							<li class="fragment"; style="font-size:80%";>The derived variables offer dynamic represantation capabilities on a Web GIS environment</li>
+							<li class="fragment"; style="font-size:80%";>Generalizations occurred that caused measurement accuracy and hardware - software compatibility issues</li>
+							</ul>
+					</section>
+					<!--slide8b-->
+					<section data-background-transition="beige">
+						<h3>Future expansions</h3>
+							<ul type="circle">
+							<li class="fragment"; style="font-size:80%";>Dissemination of research methodology in scientific journals and conferences </li>
+							<li class="fragment"; style="font-size:80%";>Optimal visualization of geographical variables in Web GIS</li>
+							<li class="fragment"; style="font-size:80%";>Adoption of the standard <a href="http://www.opengeospatial.org/standards/sensorml">SensorML </a> from OGC for building an integrated Spatial Sensor Web Network</li>
+							<li class="fragment"; style="font-size:80%";>implementation in many other applications σε πλήθος άλλων εφαρμογών</li>
+							<li class="fragment"; style="font-size:80%";>Develop greater specialization capabilities when recording</li>
+							<li class="fragment"; style="font-size:80%";>Further development of hardware and software structures</li>
+							<li class="fragment"; style="font-size:80%";>Further study a range of other implementation scenarios</li>
+							<li class="fragment"; style="font-size:80%";>Channel the research methodology to the public (crowdsourcing)</li>
+							<li class="fragment"; style="font-size:80%";>Possible adoption by public authorities and collective bodies</li>
+							<li class="fragment"; style="font-size:80%";>Support and enrichment of existing repositories under <a href="http://www.opengeospatial.org/ogc/markets-technologies/swe">SWE</a></li>  
+							</ul>
+					</section>
+				</section>
+				<!--slide9-->
+				<section data-background-image= "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg"; data-background-transition= "zoom";>
+					<br><br><h3 style="color:#d3d3d3; text-shadow: 2px 2px grey;">Thank you!!!</h3><br>
+					<!--<p style='font-size:80%; color:#d3d3d3; text-shadow: 2px 2px black;'>Γιώργος Βούτος<br>
+					<a style='font-size:70%;' href="mailto:george.voutos@gmail.com">george.voutos@gmail.com</a><br><a style='font-size:70%;' href="gitlab.com/geovout">gitlab.com/geovout</a><br><a style='font-size:70%;' href="github.com/geovout">github.com/geovout</a></p>-->
+					<br><br><br><br><p style='font-size:50%; color:#d3d3d3; text-shadow: 2px 2px black'>The study was carried out with the support of <br><em><b>Informatics and Telecommunications Institute, NCSR Democritos</b></em></p>
+					<img width="60" height="62"; data-src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Hua_logo.jpg" alt="Hua logo">
+					<img height="62"; data-src="https://www.iit.demokritos.gr/resources/images/logo_iit_long_el.png" alt="iit">
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,// Display controls in the bottom right corner
+				progress: true,// Display a presentation progress bar
+				slideNumber: true, // Display the page number of the current slide
+				history: false,// Push each slide change to the browser history
+				keyboard: true, // Enable keyboard shortcuts for navigation
+				overview: true, // Enable the slide overview mode
+				mouseWheel: true, // Enable slide navigation via mouse wheel
+				center: true,
+				transition: 'default',
+				backgroundTransition: 'slide',
+				//parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',// Parallax background image
+
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
